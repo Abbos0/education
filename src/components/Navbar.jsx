@@ -4,7 +4,6 @@ import { MdOutlineCancel } from "react-icons/md";
 
 // logo image
 import logo from "../assets/logo.png"
-
 const Navbar = () => {
   const [toggle,setToggle] = useState(false)
   return (
@@ -13,7 +12,6 @@ const Navbar = () => {
         <div className='w-[150px] md:w-[200px] cursor-pointer'>
             <img src={logo} alt="logo" className='w-full'/>
         </div>
-
       {/* nav-items    */}
         <div className={`text-[#0a2050] md:block md:static md:w-full absolute top-[80px]  w-[50%] ${toggle ? 'left-0 backdrop-blur' : 'left-[-100%]'} transition-[1s] md:p-0 p-[20px]`}>
           <nav>
