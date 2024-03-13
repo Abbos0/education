@@ -15,7 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .containerr{
   @apply xl:px-[50px] lg:px-[30px] md:px-[20px] px-[15px]
 }
@@ -24,22 +26,9 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .parda::after{
-  content:" ";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0, 40, 0.5);
-  z-index: 1;
-}
-.parda1{
-  background-image: url(./assets/back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.parda1::after{
   content:" ";
   position: absolute;
   width: 100%;
