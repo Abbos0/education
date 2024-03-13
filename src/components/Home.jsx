@@ -8,7 +8,7 @@ const Home = () => {
     <div className='relative w-full h-[100vh] parda' id='home'>
         {/* <img src={home_img} alt="home_img" className='absolute w-full h-[100vh] top-0 left-0'/> */}
         <div className='absolute z-[2] w-full h-[100vh] flex flex-col gap-3 justify-center items-center'>
-            <h1 className='text-[25px] md:text-[30px] lg:text-[40px] font-bold text-[white]'>Eng yuqori sifatdagi ta'lim</h1>
+            <h1 className='text-[25px] md:text-[30px] lg:text-[40px] font-bold text-[white]'>Education of the highest quality</h1>
             <p className='w-[80%] md:w-[60%] text-center text-[white] text-[14px] md:text-[18px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit quod sapiente itaque alias dolorum voluptates dolor excepturi repellat veritatis.</p>
             <div className='flex gap-3'>
                 <a href='/' className='capitalize text-[14px] md:text-[16px] px-5 py-2 md:px-7 md:py-3 bg-[#0a2050] text-[white] rounded-lg hover:bg-[#f3f3f3] hover:text-[#0a2050] transition-[1s]'>Learn more</a>
