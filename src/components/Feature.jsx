@@ -28,13 +28,13 @@ const DYMMY_DATA=[
 
 const Feature = () => {
   return (
-    <div>
+    <div id='about'>
         <Title title='Awesome Feature' description='Replenish man have thing gathering lights yielding shall you'/>
         <div className='flex  flex-wrap justify-center   gap-10 my-16 lg:px-10 md:px-8 sm:px-5 px-3'>
             {
             DYMMY_DATA.length === 0 ? "No Feature"
              : DYMMY_DATA.map((item,key)=>(
-                // line-clamp-3  ko'p gaplar bo'lib ketsa ushani 3 ta (...) nuqta qilib quyadi.
+
             <div className='flex flex-col text-[#0a2050] gap-3 w-full max-w-[300px] lg:max-w-[300px] xl:max-w-[350px] bg-[#f9f9f9] py-3 px-3 xl:px-5 shadow-lg' key={key}>
                 <span className=' text-[35px] md:text-[45px]'>{item.icon}</span>
                 <h1 className='text-[18px] md:text-[22px] font-bold'>{item.title}</h1>
