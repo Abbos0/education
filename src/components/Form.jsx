@@ -4,6 +4,7 @@ const Form = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [user, setUser] = useState('');
 
   const handleChange = (e) => {
     const input = e.target.value;
@@ -15,7 +16,7 @@ const Form = () => {
     e.preventDefault();
 
     const formattedPhoneNumber = phoneNumber.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1-$2-$3');
-    const text = `%0A 👦 Username: ${username} %0A 📩 Email: ${email} %0A 📞 Phone: ${formattedPhoneNumber}`;
+    const text = `%0A 🔐 Site Name:${user}https://education-nine-coral.vercel.app/  %0A 👦 Username: ${username} %0A 📩 Email: ${email} %0A 📞 Phone: ${formattedPhoneNumber}`;
     const chatId = -1002128588085;
     const token = '6834109969:AAEhUkHL4MsMs8Be2CWGY9oC7KXSbW8JHAM';
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=html`;
